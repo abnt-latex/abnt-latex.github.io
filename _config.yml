@@ -1,0 +1,15 @@
+title: abnt-latex
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-date-localization
+
+date_locale: pt
+
+
+exclude:
+  - README.md

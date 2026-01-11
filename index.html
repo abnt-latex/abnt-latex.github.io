@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<main class='post'>
+  <p>O <b>abnt-latex</b> é um conjunto de recursos para facilitar a escrita de documentos escritos em \(\LaTeX\) seguindo as normas da ABNT (Associação Brasileira de Normas Técnicas).</p>
+
+  <p>O abnt-latex é composto por uma classe (<a href="https://abnt-latex.github.io/abntlatex/abntlatex.pdf"><code>abntlatex.cls</code></a>), por pacotes de citação e de formatação de estilos bibliográficos (<a href="https://github.com/abnt-latex/abntlatex/blob/main/abnt.bst"><code>abnt.bst</code></a>).</p>
+
+  <p>Visite a página do <a href="https://github.com/abnt-latex">abnt-latex no Github</a>.</p>
+</main>
+
+{% for post in site.posts %}
+
+<article class='post'>
+  <h1 class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h1>
+  <div class="post-date">{{ post.date | localize: '%-d de %B de %Y' }}</div>
+  {{ post.content }}
+</article>
+
+{% endfor %}
