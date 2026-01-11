@@ -11,5 +11,7 @@ plugins:
 date_locale: pt
 
 
+icon_svg: assets/logo.svg
+
 exclude:
   - README.md
