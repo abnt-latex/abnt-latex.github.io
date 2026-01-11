@@ -18,6 +18,8 @@ module Jekyll
     ensure
       if response
         puts "\tJekyll Assets: Generating favicon for site"
+      else
+        puts "An error occurred"
       end
     end
   end
