@@ -10,8 +10,8 @@ plugins:
 
 date_locale: pt
 
-
-icon_svg: assets/logo.svg
+description: O abnt-latex é um conjunto de recursos para facilitar a escrita de documentos escritos em LaTeX seguindo as normas da ABNT
+logo: assets/logo.svg
 
 exclude:
   - README.md
